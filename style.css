@@ -7,7 +7,7 @@
     background-color: rgb(210, 230, 223);
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
 
 
     .left-div {
@@ -15,18 +15,30 @@
         height: 275px;
         top: 205px;
         left: 140px;
-        padding: 200px 50px 400px 50px;
+        padding: 200px 60px 400px 60px;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 30px;
+
+        .logo {
+            img {
+                width: 50px;
+            }
+        }
 
         .indi-par {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 10px;
+
+            h2 {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 300;
+            }
 
             p {
                 color: gray;
+                font-family: 'Courier New', Courier, monospace;
             }
         }
 
@@ -58,11 +70,16 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 100px;
+                
 
                 .sect1-first-div {
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
+
+                    :hover {
+                        border-color: rgb(210, 230, 223);
+                    }
 
                     .sect1-first-div-label {
                         font-family: 'Courier New', Courier, monospace;
@@ -76,6 +93,10 @@
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
+
+                    :hover {
+                        border-color: rgb(210, 230, 223);
+                    }
 
                     .sect1-second-div-label {
                         font-family: 'Courier New', Courier, monospace;
@@ -95,6 +116,10 @@
                     display: flex;
                     flex-direction: column;
 
+                    :hover {
+                        border-color: rgb(210, 230, 223);
+                    }
+
                     .sect2-first-div-label {
                         font-family: 'Courier New', Courier, monospace;
                     }
@@ -106,6 +131,10 @@
                 .sect2-second-div {
                     display: flex;
                     flex-direction: column;
+
+                    :hover {
+                        border-color: rgb(210, 230, 223);
+                    }
 
                     .sect2-second-div-label {
                         font-family: 'Courier New', Courier, monospace;
@@ -128,6 +157,10 @@
                     flex-direction: column;
                     gap: 5px;
 
+                    :hover {
+                        border-color: rgb(210, 230, 223);
+                    }
+
                     .sect3-first-div-label {
                         font-family: 'Courier New', Courier, monospace;
                     }
@@ -140,6 +173,10 @@
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
+
+                    :hover {
+                        border-color: rgb(210, 230, 223);
+                    }
 
                     .sect3-second-div-label {
                         font-family: 'Courier New', Courier, monospace;
@@ -154,6 +191,10 @@
                 display: grid;
                 grid-template-rows: repeat(2, 1fr);
 
+                :hover {
+                    border-color: rgb(210, 230, 223);
+                }
+
                 .sect4-div-label {
                     font-family: 'Courier New', Courier, monospace;
                 }
@@ -164,6 +205,10 @@
             .sect5 {
                 display: grid;
                 grid-row: 1fr; 
+
+                :hover {
+                    border-color: rgb(210, 230, 223);
+                }
 
                 .sect5-passwd {
                     font-family: 'Courier New', Courier, monospace;
@@ -176,6 +221,10 @@
                 display: grid;
                 grid-row: 1fr;
 
+                :hover {
+                    border-color: rgb(210, 230, 223);
+                }
+
                 .sect6-input {
                     padding: 5px;
                     color: white;
@@ -185,6 +234,7 @@
 
             p span {
                 color: green;
+                font-size: small;
             }
         }
 
@@ -194,6 +244,11 @@
 
 
 
+    @media  (max-width: 767) {
+        .container {
+            
+        }
+    }
 
     
 }
